@@ -8,22 +8,22 @@ function Skills() {
       <div className={s.container}>
         <div className={s.block}>
           <span>Мои скиллы</span>
-          <div className={s.skillItem}>
-            <div className={s.skillsItems}>
+          <div className={s.skillItems}>
+            <div className={s.skillsItem}>
               <div className={s.skillWord}>JS</div>
               <div className={s.skillImage}>
               </div>
               <div className={s.description}>
               </div>
             </div>
-            <div className={s.skillsItems}>
+            <div className={s.skillsItem}>
               <div className={s.skillWord}>HTML/CSS</div>
               <div className={s.skillImage}>
               </div>
               <div className={s.description}>
               </div>
             </div>
-            <div className={s.skillsItems}>
+            <div className={s.skillsItem}>
               <div className={s.skillWord}>React</div>
               <div className={s.skillImage}>
               </div>

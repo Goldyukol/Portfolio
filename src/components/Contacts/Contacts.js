@@ -8,16 +8,17 @@ function Contacts() {
       <div className={s.container}>
         <div className={s.block}>
           <span>Контакты</span>
-          <div className={s.formBlock}>
-            <form action='' className={s.formBlock}>
-              <input type='text' id='user' className={s.contactInput}></input>
-              <input type='text' id='user' className={s.contactInput}></input>
-              <textarea name='' id='' cols='50' rows='10' className={s.textarea}></textarea>
-            </form>
-          </div>
-          <div className={s.buttonBlock}>
+
+          <form action='' className={s.formBlock}>
+            <input name='' type='text' id='' className={s.contactInput}></input>
+            <input name='' type='text' id='' className={s.contactInput}></input>
+            <textarea name='' id='' cols='50' rows='10' className={s.textarea}></textarea>
             <button type='submit'>Отправить</button>
-          </div>
+          </form>
+
+          {/* <div className={s.buttonBlock}>
+            <button type='submit'>Отправить</button>
+          </div> */}
         </div>
       </div>
     </div>
