@@ -9,10 +9,10 @@ function Main() {
         <div className={s.greeting}>
           <span>Привет</span>
           <span>Меня зовут Юра Коленьков</span>
-          <span>Я front-end разработчик</span>
+          <h1>Я front-end разработчик</h1>
         </div>
         <div className={s.photo}>
-          <img src='' alt='' />
+          <img src='https://cs7.pikabu.ru/post_img/big/2018/10/20/9/154004999513599819.jpg' alt='' />
         </div>
       </div>
     </div>

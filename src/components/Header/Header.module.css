@@ -1,9 +1,11 @@
 .header {
   height: 70px;
-  background-color: #412d1a;
+  background-color: black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
 }
 .container {
  width: 80%;

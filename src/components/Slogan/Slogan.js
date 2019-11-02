@@ -7,10 +7,11 @@ function Slogan() {
     <div className={s.slogan}>
       <div className={s.container}>
         <div className={s.block}>
-          <div>Рассматриваю варианты удалённой работы</div>
+          <div className={s.sloganOpenTag}>hire</div>
           <div className={s.button}><button>Нанять меня</button></div>
         </div>
       </div>
+      <div className={s.sloganCloseTag}>/hire</div>
     </div>
   );
 }

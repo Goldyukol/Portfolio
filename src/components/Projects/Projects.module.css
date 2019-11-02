@@ -1,64 +1,104 @@
-.projectsBlock {
+.projects {
   min-height: 100vh;
-  background-color: rgb(73, 56, 28);
+  background-color: rgb(20, 18, 18);
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .container {
   width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.block {
-  border: 1px solid;
-  width: 90%;
-  min-height: 85%;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
 }
 
-.wordProject {
-  text-align: center;
-}
-
-.projects {
-  border: 1px solid;
-  width: 100%;
-  min-height: max-content;
+.projectsWrapper {
   display: flex;
-  align-self: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.projectHeader {
+  color: #00ffd9;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .project {
-  border: 1px solid;
-  width: 400px;
-  height: 100%;
-  display: flex;
-  background-size: contain;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.projectDescription {
-  width: 100%;
-  background-color: grey;
+  width: 500px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 20px;
+  border: 2px solid #c22085;
 }
 
+.projectOpenTag {
+  color: #00ffd9;
+  margin-bottom: 100px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.projectOpenTag:before {
+  content: "<";
+}
+
+.projectOpenTag:after {
+  content: ">";
+}
+
+.projectCloseTag {
+  color: #00ffd9;
+  margin-bottom: 100px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.projectCloseTag:before {
+  content: "<";
+}
+
+.projectCloseTag:after {
+  content: ">";
+}
 .projectImg {
-  width: 100%;
   height: 300px;
-  background-color: lightgreen;
+  background-color: burlywood;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../../image/projects/newtork.jpg) center center/cover no-repeat;
 }
 
+.projectBtn {
+  font-family: 'Press Start 2P', cursive;
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #c22085;
+  border-radius: 100px;
+  padding: 5px 5px;
+  font-size: 10px;
+}
+
+.projectBtn:hover {
+  background-color: #c22085;
+  font-size: 15px;
+  border-radius: 100px;
+  padding: 15px 15px;
+  color: white;
+  
+}
+
+@media screen and (max-width: 1252px) {
+  .projectsWrapper {
+  justify-content: center;
+  }
+}

@@ -1,8 +1,12 @@
 .main {
   height: 100vh;
-  background-color: rgb(167, 155, 89);
+  background: url(../../image/bg.jpg) center center/cover no-repeat;
   display: flex;
   justify-content: center;
+  color: #00ffd9;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .container {
@@ -14,13 +18,27 @@
 }
 
 .greeting {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.photo {
+.greeting span:nth-child(2) {
+  font-size: 20px;
+}
+
+.photo img{
   height: 60%;
  width: 300px;
- background-color: brown;
+ height: 300px;
+ border: 1px dotted #2d9687;
+ border-radius: 100px;
+ /* background-color: brown; */
+}
 
+.photo img:hover {
+  width: 350px;
+  height: 350px;
+  -webkit-box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
+-moz-box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
+box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
 }

@@ -6,18 +6,17 @@ function Footer() {
   return (
     <div className={s.footer}>
       <div className={s.container}>
-        <div className={s.block}>
-          <span>Юрий Коленьков</span>
-          <div className={s.networkBlock}>
-            <div className={s.icon}></div>
-            <div className={s.icon}></div>
-            <div className={s.icon}></div>
-            <div className={s.icon}></div>
-          </div>
-          <span>© 2019 Все права защищены</span>
+        <span className={s.footerHeader}>Юрий Коленьков</span>
+        <div className={s.networkBlock}>
+          <div className={s.networkIcon}></div>
+          <div className={s.networkIcon}></div>
+          <div className={s.networkIcon}></div>
+          <div className={s.networkIcon}></div>
         </div>
+        <span>© 2019 Все права защищены</span>
       </div>
     </div>
+
   );
 }
 
