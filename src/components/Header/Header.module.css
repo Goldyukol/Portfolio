@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 .container {
  width: 80%;

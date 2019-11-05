@@ -29,11 +29,10 @@
 
 .project {
   width: 500px;
-  background-color: white;
+  background-color: #222;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  border: 2px solid #c22085;
 }
 
 .projectOpenTag {
@@ -72,21 +71,63 @@
   background: url(../../image/projects/newtork.jpg) center center/cover no-repeat;
 }
 
-.projectBtn {
-  font-family: 'Press Start 2P', cursive;
-  width: 100px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.underlined {
   text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background-color: #c22085;
-  border-radius: 100px;
-  padding: 5px 5px;
-  font-size: 10px;
+  color: aqua;
+  padding-bottom: 0.15em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.2em 0 aqua;
+  transition: 0.2s;
+  background-color: black;
 }
+.underlined:hover {
+  color: #222;
+  box-shadow: inset 0 -2em 0 aqua;
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk {
+  position: relative;
+  background: #222;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
+}
+.brk::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk:hover::before {
+  right: 80%;
+}
+.brk:hover::after {
+  left: 80%;
+}
+
 
 .projectBtn:hover {
   background-color: #c22085;
@@ -94,7 +135,24 @@
   border-radius: 100px;
   padding: 15px 15px;
   color: white;
-  
+}
+
+.descriptionBlock {
+padding: 20px 20px;
+display: flex;
+flex-direction: column;
+}
+
+.title {
+  color: aqua;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.description {
+  color: white;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 @media screen and (max-width: 1252px) {

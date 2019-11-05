@@ -7,6 +7,8 @@
   font-size: 15px;
   line-height: 25px;
   font-family: 'Press Start 2P', cursive;
+  padding: 100px 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -20,25 +22,48 @@
 .greeting {
   display: flex;
   flex-direction: column;
+  font-size: 15px;
 }
+
+.greeting h1 {
+  font-size: 24px;
+  font-weight: 400;
+  
+}
+
 
 .greeting span:nth-child(2) {
   font-size: 20px;
 }
 
-.photo img{
-  height: 60%;
- width: 300px;
- height: 300px;
- border: 1px dotted #2d9687;
- border-radius: 100px;
+.greeting span:nth-child(2) span{
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.photo {
+  background: url('../../image/avatar.jpg') center center/150% no-repeat;
+ min-width: 350px;
+ min-height: 350px;
+ border: 5px solid #2e9989;
+ border-radius: 50%;
  /* background-color: brown; */
+ /* filter: brightness(40%) */
 }
 
-.photo img:hover {
+.photo:hover {
   width: 350px;
   height: 350px;
-  -webkit-box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
--moz-box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
-box-shadow: -1px 3px 116px 21px rgba(0,224,240,1);
+  -webkit-box-shadow: -1px 3px 116px 21px rgba(46,153,137,1);
+  -moz-box-shadow: -1px 3px 116px 21px rgba(46,153,137,1);
+  box-shadow: -1px 3px 116px 21px rgba(46,153,137,1);
+  transition: 0.5s;
 }
+
+
+@media (max-width: 600px) {
+  .photo {
+   min-width: 300px;
+   min-height: 300px;
+  }
+} 

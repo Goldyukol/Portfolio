@@ -11,31 +11,49 @@ function Projects() {
 
           <div className={s.project}>
             <div className={s.projectImg}>
-              <a className={s.projectBtn} href=''>СМОТРЕТЬ</a>
+              <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
+              <a href="#" className={s.brk}>
+                Смотреть
+              </a>
             </div>
-            <span className={s.projectTitle}>Social Network</span>
-            <span className={s.description}>Описание проекта</span>
+            <div className={s.descriptionBlock}>
+              <span className={s.title}>Social Network</span>
+              <span className={s.description}>Lorem ipsum dolor sit amet,
+             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+            </div>
           </div>
 
           <div className={s.project}>
             <div className={s.projectImg}>
-              <a className={s.projectBtn} href=''>СМОТРЕТЬ</a>
+              <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
+              <a href="#" className={s.brk}>
+                Смотреть
+              </a>
             </div>
-            <span className={s.projectTitle}>Social Network</span>
-            <span className={s.description}>Описание проекта</span>
+            <div className={s.descriptionBlock}>
+              <span className={s.title}>Social Network</span>
+              <span className={s.description}>Lorem ipsum dolor sit amet,
+             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+            </div>
           </div>
 
           <div className={s.project}>
             <div className={s.projectImg}>
-              <a className={s.projectBtn} href=''>СМОТРЕТЬ</a>
+              <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
+              <a href="#" className={s.brk}>
+                Смотреть
+              </a>
             </div>
-            <span className={s.projectTitle}>Social Network</span>
-            <span className={s.description}>Описание проекта</span>
+            <div className={s.descriptionBlock}>
+              <span className={s.title}>Social Network</span>
+              <span className={s.description}>Lorem ipsum dolor sit amet,
+             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+            </div>
           </div>
 
         </div>
       </div>
-      <span className={s.projectOpenTag}>/projects</span>
+      <span className={s.projectCloseTag}>/projects</span>
     </div>
   );
 }

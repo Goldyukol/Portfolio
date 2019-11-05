@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 100px 0;
 }
 
 .container {
@@ -107,20 +108,19 @@
   background-position: 50%;
 }
 
-.skillImgReact:hover {
+.skillImgBorder {
   width: 150px;
   height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.skillImgHtml:hover {
-  width: 150px;
-  height: 150px;
-}
-
-.skillImgJs:hover {
-  width: 150px;
-  height: 150px;
-
+.skillImgReact:hover, .skillImgHtml:hover, .skillImgJs:hover {
+  width: 120px;
+  height: 120px;
+  transition: 0.5s;
 }
 
 .skillName {
