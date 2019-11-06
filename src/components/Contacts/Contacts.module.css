@@ -26,7 +26,10 @@ text-align: center;;
 .formBlock {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 500px;
+  position: relative;
 }
 
 .contactBtn {
@@ -64,17 +67,48 @@ resize: none;
 .contactInput {
   margin-bottom: 36px;
   height: 20px;
+  width: 100%;
   font-size: 20px;
   border: none;
-  border-bottom: 3px solid  #00ffd9;
-  background: none;
+  border-bottom: 2px solid  #00ffd9;
+  background: transparent;
   outline: none;
   color: white;
 }
 
+.name, .email {
+  width: 100%;
+  position: relative;
+}
+
+.contactInput:focus ~ label,
+label:active{
+    color:#00ffd9;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.contactInput:focus ~ label,
+label:active{
+    font-weight: bold;
+    top: -20px;
+    transition: all .25s ease-in-out;
+}
+
 .contactTextarea {
   margin-bottom: 36px;
-  height: 20px;
+  height: 60px;
+  width: 100%;
   font-size: 20px;
   border: none;
   border-bottom: 3px solid  #00ffd9;

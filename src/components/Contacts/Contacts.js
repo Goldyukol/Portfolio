@@ -8,8 +8,14 @@ function Contacts() {
       <div className={s.contactOpenTag}>contact</div>
       <div className={s.container}>
         <form action='' className={s.formBlock}>
-          <input className={`${s.contactInput} ${s.name}`} type='text' id='' ></input>
-          <input className={`${s.contactInput} ${s.email}`} name='' type='text' id='' ></input>
+          <div className={s.name}>
+            <input className={s.contactInput} type='text' id='name' ></input>
+            <label for='name'>name</label>
+          </div>
+          <div className={s.email}>
+            <input className={s.contactInput} name='' type='text' id='' ></input>
+            <span className={s.styledSpan}></span>
+          </div>
           <textarea className={s.contactTextarea} name='' id=''></textarea>
           <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
           <a href="#" className={s.brk}>
