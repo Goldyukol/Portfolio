@@ -1,21 +1,22 @@
 import React from 'react';
-import s from './Main.module.css';
-
+import s from './Main.module.sass';
+import Fade from 'react-reveal/Fade';
 
 function Main() {
   return (
-    <div className={s.main}>
-      <div className={s.container}>
-        <div className={s.greeting}>
-          <span>Привет!</span>
-          <span>Меня зовут <span>Юра Коленьков</span></span>
-          <h1>Я front-end разработчик</h1>
-        </div>
-        <div className={s.photo}>
-          {/* <img src='https://cs7.pikabu.ru/post_img/big/2018/10/20/9/154004999513599819.jpg' alt='' /> */}
+    <Fade clear>
+      <div className={s.main} id='main'>
+        <div className={s.container}>
+          <div className={s.greeting}>
+            <span>Привет!</span>
+            <span>Меня зовут <span>Юра Коленьков</span></span>
+            <h1>Я front-end разработчик</h1>
+          </div>
+          <div className={s.photo}>
+          </div>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 

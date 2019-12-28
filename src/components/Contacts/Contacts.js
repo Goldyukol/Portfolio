@@ -2,21 +2,25 @@ import React from 'react';
 import s from './Contacts.module.css';
 
 
-function Contacts() {
+const Contacts = () => {
+
   return (
     <div className={s.contacts}>
-      <div className={s.contactOpenTag}>contact</div>
+      <div className={s.contactOpenTag} id='contact'>contact</div>
       <div className={s.container}>
         <form action='' className={s.formBlock}>
           <div className={s.name}>
-            <input className={s.contactInput} type='text' id='name' ></input>
-            <label for='name'>name</label>
+            <input type="text" id="name" required="required" />
+            <label for="name">Name</label>
           </div>
           <div className={s.email}>
-            <input className={s.contactInput} name='' type='text' id='' ></input>
-            <span className={s.styledSpan}></span>
+            <input type="text" id="email" required="required" />
+            <label for="email">Email</label>
           </div>
-          <textarea className={s.contactTextarea} name='' id=''></textarea>
+          <div className={s.textarea}>
+            <textarea type="text" id="text" required="required"></textarea>
+            <label for="text">Message</label>
+          </div>
           <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
           <a href="#" className={s.brk}>
             Отправить
@@ -28,5 +32,6 @@ function Contacts() {
 
   );
 }
+
 
 export default Contacts;

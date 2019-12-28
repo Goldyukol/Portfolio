@@ -42,9 +42,7 @@ text-align: center;;
   border: none;
 }
 
-.contactTextarea {
-resize: none;
-}
+
 
 .contactCloseTag:before, .contactOpenTag:before {
   content: "<";
@@ -64,59 +62,10 @@ resize: none;
   margin-top: 150px;
 }
 
-.contactInput {
-  margin-bottom: 36px;
-  height: 20px;
-  width: 100%;
-  font-size: 20px;
-  border: none;
-  border-bottom: 2px solid  #00ffd9;
-  background: transparent;
-  outline: none;
-  color: white;
-}
-
-.name, .email {
+.name, .email, .textarea {
   width: 100%;
   position: relative;
 }
-
-.contactInput:focus ~ label,
-label:active{
-    color:#00ffd9;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: none;
-}
-
-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  float: left;
-  color: white;
-  text-transform: uppercase;
-}
-
-.contactInput:focus ~ label,
-label:active{
-    font-weight: bold;
-    top: -20px;
-    transition: all .25s ease-in-out;
-}
-
-.contactTextarea {
-  margin-bottom: 36px;
-  height: 60px;
-  width: 100%;
-  font-size: 20px;
-  border: none;
-  border-bottom: 3px solid  #00ffd9;
-  background: none;
-  outline: none;
-  color: white;
-}
-
 
 .underlined {
   text-decoration: none;
@@ -177,10 +126,91 @@ label:active{
   left: 80%;
 }
 
+label {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  color: #00ffd9;
+  transition: .25s ease;
+  cursor: text;
+  font: 20px 'Ubuntu Mono', monospace
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding-top: 36px;
+  border: none;
+  border-bottom: 2px solid #00ffd9;
+  background: transparent;
+  outline: none;
+  color: white;
+  font: 20px 'Ubuntu Mono', monospace;
+  transition: .3s ease;
+  margin-bottom: 36px;
+  caret-color: #00ffd9;
+}
+
+input:valid ~ label {
+  top: 10px;
+  font-size: 20px;
+  color: #00ffd9;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus ~ label {
+  top: 10px;
+  font-size: 20px;
+  color: #00ffd9;
+}
+
+::selection {
+  background: #00ffd9;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding-top: 36px;
+  border: none;
+  border-bottom: 2px solid #00ffd9;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  transition: .3s ease;
+  caret-color: #00ffd9;
+  resize: none;
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+textarea ~ label {
+  top: 62px;
+}
+
+textarea:valid ~ label {
+  top: -25px;
+  font-size: 20px;
+  color: #00ffd9;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus ~ label {
+  top: -25px;
+  font-size: 20px;
+  color: #00ffd9;
+}
+
 
 @media screen and (max-width: 626px) {
   .formBlock {
     width: 100%;
   }
 }
-

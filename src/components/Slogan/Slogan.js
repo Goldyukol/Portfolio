@@ -1,6 +1,6 @@
 import React from 'react';
-import s from './Slogan.module.css';
-
+import s from './Slogan.module.sass';
+import Button from '../Common/Button/Button';
 
 function Slogan() {
   return (
@@ -9,10 +9,7 @@ function Slogan() {
       <div className={s.container}>
         <div className={s.block}>
           <div className={s.title}>Готов сотрудничать с Вами!</div>
-          <div><a href="https://www.airforce.com/" className={s.underlined}></a></div>
-          <a href="#" className={s.brk}>
-            Нанять меня
-              </a>
+          <Button />
         </div>
       </div>
       <div className={s.sloganCloseTag}>/hire</div>

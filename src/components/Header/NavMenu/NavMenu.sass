@@ -1,0 +1,74 @@
+@import '../../../sass/_variables'
+
+a, button
+  outline: none
+
+.navMenu
+  width: 25px
+
+.bm-item
+  font: 25px 'Ubuntu Mono', monospace
+  display: inline-block
+  text-decoration: none
+  margin-bottom: 10px
+  color: $white_color
+  transition: color 0.2s
+  &:hover
+    color: #00ffd9
+  &-list
+    color: $white_color
+
+.bm-burger-button
+  position: relative
+  width: 40px
+  height: 30px
+  left: 100px
+  top: 20px
+
+.bm-burger-bars
+  background: $white_color
+  height: 10%
+  &-hover
+    background-color: $aqua_color
+
+.bm-cross
+  background: $white_color
+  &-button
+    height: 24px
+    width: 24px
+
+.bm-menu
+  background: $grey_color
+  padding: 2.5em 1.5em 0
+  font-size: 1.15em
+  &-wrap
+    height: 100vh !important
+
+.menu-item
+  cursor: pointer
+
+.bm-morph-shape
+  fill: $grey_color
+
+.bm-overlay
+  background: $black_color
+
+@media (min-width: 500px)
+  .bm-menu-wrap
+    width: 300px !important
+
+@media (max-width: 1200px)
+  .navMenu
+    width: 60px
+
+@media (max-width: 850px)
+  .navMenu
+    width: 80px
+
+@media (max-width: 650px)
+  .navMenu
+    width: 100px
+
+@media (max-width: 450px)
+  .navMenu
+    width: 120px

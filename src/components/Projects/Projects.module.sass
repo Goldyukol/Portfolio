@@ -1,0 +1,96 @@
+@import '../../sass/_variables'
+@import '../../sass/_mixins'
+
+.projects
+  min-height: 100vh
+  background-color: rgb(20, 18, 18)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  .container
+    width: 80%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 100px 0
+    .otag
+      @include otag
+    .ctag
+      @include ctag
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    .project
+      display: flex
+      flex-direction: column
+      margin-bottom: 20px
+      border: 1px solid #00ffd9
+      padding-bottom: 15px
+      &_block
+        padding: 20px 20px
+        display: flex
+        flex-direction: column
+      &_title
+        color: $aqua_color
+        font-family: 'Press Start 2P', cursive
+        margin-bottom: 15px
+        font-weight: 400
+      &_description
+        color: $white_color
+        font-family: 'Ubuntu Mono', monospace
+        margin-bottom: 30px
+        text-decoration: none
+      &_btn
+        color: $aqua_color
+        padding-bottom: 0.15em
+        box-sizing: border-box
+        box-shadow: inset 0 -0.2em 0 $aqua_color
+        transition: 0.2s
+        background-color: $black_color
+        &:hover
+          color: #222
+          box-shadow: inset 0 -2em 0 $aqua_color
+          transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1)
+      &_brk
+        position: relative
+        background: #222
+        color: $aqua_color
+        text-transform: uppercase
+        text-decoration: none
+        border: 0.2em solid $aqua_color
+        padding: 0.5em 1em
+        &:hover::before
+          right: 80%
+        &:hover::after
+          left: 80%
+        &::before
+          content: ""
+          display: block
+          position: absolute
+          width: 10%
+          background: #222
+          height: 0.3em
+          right: 20%
+          top: -0.21em
+          transform: skewX(-45deg)
+          -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1)
+          transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1)
+        &::after
+          content: ""
+          display: block
+          position: absolute
+          width: 10%
+          background: #222
+          height: 0.3em
+          left: 20%
+          bottom: -0.25em
+          transform: skewX(45deg)
+          -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1)
+          transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1)
+
+@media screen and (max-width: 1252px)
+  .projects_wrapper
+    justify-content: center

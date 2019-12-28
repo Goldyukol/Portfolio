@@ -1,46 +1,57 @@
 import React from 'react';
-import s from './Skills.module.css';
+import s from './Skills.module.sass';
+import Fade from 'react-reveal/Fade';
 
-function Skills() {
+const Skills = () => {
   return (
-    <div className={s.skills}>
-      <div className={s.container}>
-        <div className={s.block}>
-          <div className={s.skillOpenTag}>skills</div>
-          <div className={s.skillItems}>
-            <div className={s.skillsItem}>
-              <div className={s.skillName}>JS</div>
-              <div className={s.skillImgBorder}>
-                <div className={s.skillImgJs} />
+    <Fade clear>
+      <div className={s.skills}>
+        <div className={s.otag} id='skills'>skills</div>
+        <div className={s.container}>
+          <div className={s.block}>
+            <div className={s.items}>
+              <div className={s.item}>
+                <div className={s.item_name}>JavaScript</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgJs} />
+                </div>
               </div>
-              <div className={s.skillsDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
+              <div className={s.item}>
+                <div className={s.item_name}>HTML/CSS</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgHtml} />
+                </div>
               </div>
-            </div>
-            <div className={s.skillsItem}>
-              <div className={s.skillName}>HTML/CSS</div>
-              <div className={s.skillImgBorder}>
-                <div className={s.skillImgHtml} />
+              <div className={s.item}>
+                <div className={s.item_name}>React/Redux</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgReact} />
+                </div>
               </div>
-              <div className={s.skillsDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
+              <div className={s.item}>
+                <div className={s.item_name}>TypeScript</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgTs} />
+                </div>
               </div>
-            </div>
-            <div className={s.skillsItem}>
-              <div className={s.skillName}>React/Redux</div>
-              <div className={s.skillImgBorder}>
-                <div className={s.skillImgReact} />
+              <div className={s.item}>
+                <div className={s.item_name}>SASS</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgSass} />
+                </div>
               </div>
-              <div className={s.skillsDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...
+              <div className={s.item}>
+                <div className={s.item_name}>Bootstrap</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgBootstrap} />
+                </div>
               </div>
-
             </div>
           </div>
         </div>
+        <div className={s.ctag}>/skills</div>
       </div>
-      <div className={s.skillCloseTag}>/skills</div>
-    </div>
+    </Fade>
   );
 }
 

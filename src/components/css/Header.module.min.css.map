@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAC,CACN,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,SAAS,CAAE,IAAI,CACf,QAAQ,CAAE,KAAK,CACf,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,EAAE,CAAG,AAEhB,AAAA,UAAU,AAAC,CACT,KAAK,CAAE,GAAG,CACV,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,QAAQ,CACzB,WAAW,CAAE,MAAM,CAAG",
+    "sources": [
+        "../Header/Header.module.sass"
+    ],
+    "names": [],
+    "file": "Header.module.min.css"
+}

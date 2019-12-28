@@ -1,0 +1,18 @@
+@import '../sass/_variables'
+
+@mixin otag
+    color: $aqua_color
+    margin-bottom: 100px
+    font-family: 'Press Start 2P', cursive
+    &:before
+        content: '<'
+    &:after
+        content: '>'
+@mixin ctag
+    color: $aqua_color
+    margin-top: 100px
+    font-family: 'Press Start 2P', cursive
+    &:before
+        content: '<'
+    &:after
+        content: '>'

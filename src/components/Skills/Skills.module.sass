@@ -1,0 +1,92 @@
+@import '../../sass/_variables'
+@import '../../sass/_mixins'
+
+.skills
+  min-height: 100vh
+  // background-color: $black_color
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  padding: 100px 0
+  font-family: 'Press Start 2P', cursive
+  .otag
+    @include otag
+  .ctag
+    @include ctag
+    margin-top: 40px
+  .container
+    width: 80%
+    display: flex
+    align-items: center
+    justify-content: center
+    .block
+      width: 90%
+      min-height: 60%
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      .items
+        width: 100%
+        min-height: 75%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        .item
+          color: $white_color
+          width: 300px
+          min-height: 100px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: center
+          flex-wrap: wrap
+          margin-bottom: 15px
+          &_name
+            margin-bottom: 20px
+          &_border
+            width: 150px
+            height: 150px
+            display: flex
+            justify-content: center
+            align-items: center
+
+.skillImgReact
+  position: relative
+  background-image: url(../../image/skills/react-redux.png)
+  width: 100px
+  height: 100px
+  border-radius: 10px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50%
+  cursor: pointer
+  margin-bottom: 40px
+
+.skillImgHtml
+  background-image: url(../../image/skills/html-css.png)
+  composes: skillImgReact
+
+.skillImgJs
+  background-image: url(../../image/skills/js.png)
+  composes: skillImgReact
+
+.skillImgTs
+  background-image: url(../../image/skills/ts.png)
+  composes: skillImgReact
+
+.skillImgSass
+  background-image: url(../../image/skills/sass.png)
+  composes: skillImgReact
+
+.skillImgBootstrap
+  background-image: url(../../image/skills/bootstrap.png)
+  composes: skillImgReact
+
+.skillImgReact:hover, .skillImgHtml:hover, .skillImgJs:hover, .skillImgBootstrap:hover,
+.skillImgTs:hover, .skillImgSass:hover
+  width: 120px
+  height: 120px
+  transition: 0.5s
