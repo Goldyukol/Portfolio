@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Main.module.sass';
 import Fade from 'react-reveal/Fade';
 
-function Main() {
+const Main = () => {
   return (
     <Fade clear>
       <div className={s.main} id='main'>

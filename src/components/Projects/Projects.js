@@ -1,8 +1,7 @@
 import React from 'react';
 import s from './Projects.module.sass';
 
-
-function Projects() {
+const Projects = () => {
   return (
     <div className={s.projects} >
       <div className={s.container}>

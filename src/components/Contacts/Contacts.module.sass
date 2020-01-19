@@ -1,0 +1,102 @@
+@import '../../sass/_variables'
+@import '../../sass/_mixins'
+
+.contacts
+  padding: 100px 0
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 100px 0
+  color: aqua
+  .otag
+    @include otag
+    margin-bottom: 10px
+  .ctag
+    @include ctag
+    margin-top: 20px
+  &_container
+    width: 80%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 80px 0
+  &_form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 500px
+    position: relative
+  &_name, &_email, &_textarea
+    width: 100%
+    position: relative
+
+label
+  position: absolute
+  left: 0
+  top: 35px
+  color: #00ffd9
+  transition: .25s ease
+  cursor: text
+  font: 20px 'Ubuntu Mono', monospace
+
+input
+  display: block
+  width: 100%
+  padding-top: 36px
+  border: none
+  border-bottom: 2px solid #00ffd9
+  background: transparent
+  outline: none
+  color: white
+  font: 20px 'Ubuntu Mono', monospace
+  transition: .3s ease
+  margin-bottom: 36px
+  caret-color: #00ffd9
+  &:valid ~ label
+    top: 10px
+    font-size: 20px
+    color: #00ffd9
+  &:focus
+    outline: none
+  &:focus ~ label
+    top: 10px
+    font-size: 20px
+    color: #00ffd9
+
+::selection
+  background: #00ffd9
+
+textarea
+  display: block
+  width: 100%
+  padding-top: 36px
+  border: none
+  border-bottom: 2px solid #00ffd9
+  background: transparent
+  outline: none
+  color: white
+  font-size: 20px
+  transition: .3s ease
+  caret-color: #00ffd9
+  resize: none
+  overflow: hidden
+  margin-bottom: 36px
+  & ~ label
+    top: 62px
+  &:valid ~ label
+    top: -25px
+    font-size: 20px
+    color: #00ffd9
+  &:focus
+    outline: none
+  &:focus ~ label
+    top: -25px
+    font-size: 20px
+    color: #00ffd9
+
+@media screen and (max-width: 626px)
+  .contacts_form
+    width: 100%

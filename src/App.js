@@ -18,10 +18,15 @@ const particlesOpt = {
         'value_area': 800
       }
     }
+  },
+  'interactivity': {
+    'onhover': {
+      'mode': 'repulse'
+    }
   }
 }
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
       <Particles className={'particles'} params={particlesOpt} />
