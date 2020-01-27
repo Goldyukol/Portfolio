@@ -46,6 +46,18 @@ const Skills = () => {
                   <div className={s.skillImgBootstrap} />
                 </div>
               </div>
+              <div className={s.item}>
+                <div className={s.item_name}>NodeJS</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgNodeJS} />
+                </div>
+              </div>
+              <div className={s.item}>
+                <div className={s.item_name}>MongoDB</div>
+                <div className={s.item_border}>
+                  <div className={s.skillImgMongoDB} />
+                </div>
+              </div>
             </div>
           </div>
         </div>

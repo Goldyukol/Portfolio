@@ -15,7 +15,6 @@
     @include otag
   .ctag
     @include ctag
-    margin-top: 40px
   .container
     width: 80%
     display: flex
@@ -83,6 +82,14 @@
 
 .skillImgBootstrap
   background-image: url(../../image/skills/bootstrap.png)
+  composes: skillImgReact
+
+.skillImgNodeJS
+  background-image: url('../../image/skills/nodejs.png')
+  composes: skillImgReact
+
+.skillImgMongoDB
+  background-image: url('../../image/skills/mongoDbb.png')
   composes: skillImgReact
 
 .skillImgReact:hover, .skillImgHtml:hover, .skillImgJs:hover, .skillImgBootstrap:hover,

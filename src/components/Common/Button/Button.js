@@ -5,9 +5,10 @@ const Button = (props) => {
     return (
         <>
             <div><span className={s.btn}></span></div>
-            <a href="#" className={s.brk}>
+            <button onClick={props.onClick} type={props.type} href={props.href} className={s.brk}
+                disabled={props.disabled}>
                 {props.title}
-            </a>
+            </button>
         </>
     );
 }
