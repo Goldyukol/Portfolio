@@ -22,7 +22,7 @@ const Contacts = () => {
               <textarea name='message' type="text" id="text" required="required" autocomplete='off' />
               <label for="text">Message</label>
             </div>
-            <Button title='Отправить' type='submit' />
+            <Button title='Send' type='submit' />
           </form>
         </div>
         <div className={s.ctag}>/contact</div>

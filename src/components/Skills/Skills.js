@@ -1,69 +1,45 @@
 import React from 'react';
 import s from './Skills.module.sass';
 import Fade from 'react-reveal/Fade';
+import Skill from './Skill/Skill';
 
 const Skills = () => {
   return (
-    <Fade clear>
-      <div className={s.skills}>
-        <div className={s.otag} id='skills'>skills</div>
-        <div className={s.container}>
-          <div className={s.block}>
-            <div className={s.items}>
-              <div className={s.item}>
-                <div className={s.item_name}>JavaScript</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgJs} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>HTML/CSS</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgHtml} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>React/Redux</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgReact} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>TypeScript</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgTs} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>SASS</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgSass} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>Bootstrap</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgBootstrap} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>NodeJS</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgNodeJS} />
-                </div>
-              </div>
-              <div className={s.item}>
-                <div className={s.item_name}>MongoDB</div>
-                <div className={s.item_border}>
-                  <div className={s.skillImgMongoDB} />
-                </div>
-              </div>
-            </div>
+    <div className={s.skills}>
+      <div className={s.otag} id='skills'>skills</div>
+      <div className={s.container}>
+        <div className={s.block}>
+          <div className={s.items}>
+            <Fade left>
+              <Skill name='JavaScript' img={s.skillImgJs} />
+            </Fade>
+            <Fade top>
+              <Skill name='HTML/CSS' img={s.skillImgHtml} />
+            </Fade>
+            <Fade top>
+              <Skill name='React/Redux' img={s.skillImgReact} />
+            </Fade>
+            <Fade right>
+              <Skill name='TypeScript' img={s.skillImgTs} />
+            </Fade>
+            <Fade left>
+              <Skill name='SASS' img={s.skillImgSass} />
+            </Fade>
+            <Fade bottom>
+              <Skill name='Bootstrap' img={s.skillImgBootstrap} />
+            </Fade>
+            <Fade bottom>
+              <Skill name='NodeJS' img={s.skillImgNodeJS} />
+            </Fade>
+            <Fade right>
+              <Skill name='MongoDB' img={s.skillImgMongoDB} />
+            </Fade>
           </div>
         </div>
-        <div className={s.ctag}>/skills</div>
       </div>
-    </Fade>
+      <div className={s.ctag}>/skills</div>
+    </div>
+
   );
 }
 
