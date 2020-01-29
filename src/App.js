@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -8,7 +8,6 @@ import About from './components/About/About';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 import Particles from 'react-particles-js';
-
 
 const particlesOpt = {
   'particles': {

@@ -9,13 +9,11 @@
   justify-content: center
   align-items: center
   padding: 100px 0
-  color: aqua
+  color: $aqua_color
   .otag
     @include otag
-    margin-bottom: 10px
   .ctag
     @include ctag
-    margin-top: 20px
   &_container
     width: 80%
     display: flex
@@ -37,7 +35,7 @@ label
   position: absolute
   left: 0
   top: 35px
-  color: #00ffd9
+  color: $aqua_color
   transition: .25s ease
   cursor: text
   font: 20px 'Ubuntu Mono', monospace
@@ -47,40 +45,40 @@ input
   width: 100%
   padding-top: 36px
   border: none
-  border-bottom: 2px solid #00ffd9
+  border-bottom: 2px solid $aqua_color
   background: transparent
   outline: none
-  color: white
+  color: $white_color
   font: 20px 'Ubuntu Mono', monospace
   transition: .3s ease
   margin-bottom: 36px
-  caret-color: #00ffd9
+  caret-color: $aqua_color
   &:valid ~ label
     top: 10px
     font-size: 20px
-    color: #00ffd9
+    color: $aqua_color
   &:focus
     outline: none
   &:focus ~ label
     top: 10px
     font-size: 20px
-    color: #00ffd9
+    color: $aqua_color
 
 ::selection
-  background: #00ffd9
+  background: $aqua_color
 
 textarea
   display: block
   width: 100%
   padding-top: 36px
   border: none
-  border-bottom: 2px solid #00ffd9
+  border-bottom: 2px solid $aqua_color
   background: transparent
   outline: none
-  color: white
+  color: $white_color
   font-size: 20px
   transition: .3s ease
-  caret-color: #00ffd9
+  caret-color: $aqua_color
   resize: none
   overflow: hidden
   margin-bottom: 36px
@@ -89,13 +87,13 @@ textarea
   &:valid ~ label
     top: -25px
     font-size: 20px
-    color: #00ffd9
+    color: $aqua_color
   &:focus
     outline: none
   &:focus ~ label
     top: -25px
     font-size: 20px
-    color: #00ffd9
+    color: $aqua_color
 
 @media screen and (max-width: 626px)
   .contacts_form
